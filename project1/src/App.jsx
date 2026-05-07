@@ -137,7 +137,7 @@ export default function App() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    fetch("https://college-match-ai1.onrender.com")
+    fetch("https://college-match-ai1.onrender.com/api/colleges")
       .then((res) => res.json())
       .then((data) => setColleges(data))
       .catch((err) => console.log(err));
